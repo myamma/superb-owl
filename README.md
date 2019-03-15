@@ -29,7 +29,8 @@ of owl (superb-owl) and american football (superbowl).
    pip install -r requirements.txt
 4. run server
    python manage.py runserver 3000
-5. profit!!!!
+5. open browser and go to localhost:3000
+6. app should load after a few seconds and then profit!!!!
 
 # troubleshooting
 If you run into some issues, you may have to create a django project from scratch by running 'django-admin startproject superb-owl',
