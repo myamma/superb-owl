@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>recognition</title>
+<link rel="shortcut icon" href="static/logo.png">
+<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <h2>superb-owl or super-bowl identifier</h2>  
+            <p>upload an image to find out!</p>
+            <hr>  
+            <div class="row clearfix">
+                <div class="col-md-6 column">
+                    <h3>select image (.jpg) to upload, then click recognize button</h3>
+                    <form method="post" id="uploadForm" enctype="multipart/form-data">
+                        <input name="userImg" id="file" type="file" />
+                        <div>
+                            <img id="image" />
+                        </div>
+                        <button>Submit</button>
+                    </form>
+                </div>
+
+                <div class="col-md-6 column">
+                    <h3>result:</h3>
+                    <h2 id="rec_result"></h2>
+                </div>
+            </div>
+            <div id="imgs">   
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="static/jquery.min.js"></script>
+<script src="static/bootstrap.min.js"></script>
+<script src="static/recog.js"></script>
+<script>
+    $("form#uploadForm").submit(function(e) {
+        e.preventDefault();    
+        var formData = new FormData(this);
+        document.getElementById("rec_result").innerHTML = "computing...";
+
+        $.ajax({
+            url: '/process',
+            type: 'POST',
+            data: formData,
+            success: function (data) {
+                data = JSON.parse(data);
+                // alert(data['status'])
+                if(data["status"] == 1)
+                {
+                    document.getElementById("rec_result").innerHTML = data["result"];
+                }
+                else
+                {
+                    document.getElementById("rec_result").innerHTML = "failed";
+                }
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+        });
+    });
+</script>
+
+</body>
+</html>
