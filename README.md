@@ -1,3 +1,10 @@
+![owl_example](https://github.com/myamma/superb-owl/blob/master/owl_example.JPG)
+![ball_example](https://github.com/myamma/superb-owl/blob/master/ball_example.JPG)
+
+# deployment
+you can view deployed app in https://superb-owl-kecheng.herokuapp.com/
+it may take 30 seconds to load since I am using free tier
+
 # superb-owl
 CNN classifier (superb-owl vs super-bowl)
 
