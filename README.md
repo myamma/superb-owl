@@ -21,15 +21,15 @@ This machine learning web app (django backend; html, css, jquery, javascript fro
 of owl (superb-owl) and american football (superbowl). 
 
 # installation and running
-1. create virtual environment with python 3.6.1 (version is important)
-   python36 -m virtualenv venv
-2. enter into virtual environment
+1. create virtual environment with python 3.6.1 (version is important) <br/>
+   python36 -m virtualenv venv 
+2. enter into virtual environment <br/>
    source venv/Scripts/activate (for windows and git bash)
-3. install dependencies
+3. install dependencies <br/>
    pip install -r requirements.txt
-4. run server
+4. run server <br/>
    python manage.py runserver 3000
-5. open browser and go to localhost:3000
+5. open browser and go to localhost:3000 <br/>
 6. app should load after a few seconds and then profit!!!!
 
 # troubleshooting
