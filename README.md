@@ -3,7 +3,7 @@
 
 # training 
 if you wish to train your own CNN instead of using mine, you can look into the tensorflow code in superb_owl/training folder.
-there are two .ipynb files. 'model' is used to train and test the network. 'predict_helper' is for manully test images not in training or test sets.
+there are two .ipynb files. 'model' is used to train and test the network. 'predict_helper' is for manully testing images not in training and test sets.
 the CNN has the following layers:
 CONV2D -> RELU -> MAXPOOL -> CONV2D -> RELU -> MAXPOOL -> FLATTEN -> FULLYCONNECTED
 
