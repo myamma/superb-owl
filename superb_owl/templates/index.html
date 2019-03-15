@@ -11,14 +11,6 @@
 
 <div class="container">
     <div class="row clearfix">
-        <!-- <div class="col-md-12 column">
-            <div class="col-md-3 column">
-                <img src="static/ball21.jpg" />
-            </div>
-            <div class="col-md-3 column">
-                <img src="static/owl20.jpg" />
-            </div>
-        </div> -->
         <div class="col-md-12 column">
             <h2>superb-owl or super-bowl identifier</h2>  
             <p>upload an image to find out!</p>
@@ -50,6 +42,7 @@
 <script src="static/bootstrap.min.js"></script>
 <script src="static/recog.js"></script>
 <script>
+    //using ajax to prevent form's default refreshing page behavior
     $("form#uploadForm").submit(function(e) {
         e.preventDefault();    
         var formData = new FormData(this);
