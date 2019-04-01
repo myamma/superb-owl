@@ -1,3 +1,10 @@
+# superb-owl
+CNN classifier (superb-owl vs super-bowl)
+
+# description
+This machine learning web app (django backend; html, css, jquery, javascript frontend) is able to distinguish between images 
+of owl (superb-owl) and american football (superbowl). 
+
 ![owl_example](https://github.com/myamma/superb-owl/blob/master/owl_example.JPG)
 ![ball_example](https://github.com/myamma/superb-owl/blob/master/ball_example.JPG)
 
@@ -12,13 +19,6 @@ CONV2D -> RELU -> MAXPOOL -> CONV2D -> RELU -> MAXPOOL -> FLATTEN -> FULLYCONNEC
 # deployment
 you can view deployed app in https://superb-owl-kecheng.herokuapp.com/
 it may take 30 seconds to load since I am using free tier
-
-# superb-owl
-CNN classifier (superb-owl vs super-bowl)
-
-# description
-This machine learning web app (django backend; html, css, jquery, javascript frontend) is able to distinguish between images 
-of owl (superb-owl) and american football (superbowl). 
 
 # installation and running
 1. create virtual environment with python 3.6.1 (version is important) <br/>
